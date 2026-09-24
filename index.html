@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ג'יימי שטיין | צבע וגימור ברמה הגבוהה ביותר</title>
+<meta name="description" content="ג'יימי שטיין - בעל מקצוע דור שלישי, 20 שנות ניסיון בצבע, שפכטל וגימורים ברמה גבוהה. בית זית והסביבה.">
+<meta property="og:title" content="ג'יימי שטיין | צבע וגימור">
+<meta property="og:description" content="דור שלישי למקצוע. 20 שנה של גימורים מדויקים - מבתי יוקרה ועד מבנים מסחריים.">
+<meta property="og:image" content="img/kitchen.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@300;400;500;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1f1d1a;--soft:#6b655c;--line:#e4ddd2;--paper:#faf7f2;--stone:#f1ece3;--gold:#a8844f;--dark:#191816}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Heebo',Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.75;font-weight:300;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+header{position:fixed;inset:0 0 auto 0;z-index:20;transition:.3s;background:linear-gradient(to bottom,rgba(20,19,17,.55),rgba(20,19,17,0))}
+header.solid{background:rgba(250,247,242,.96);box-shadow:0 1px 0 var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{font-family:'Frank Ruhl Libre',serif;font-size:1.45rem;font-weight:500;color:#fff;letter-spacing:.02em}
+.brand small{display:block;font-family:'Playfair Display',serif;font-style:italic;font-size:.72rem;letter-spacing:.18em;opacity:.8;margin-top:-4px}
+header.solid .brand{color:var(--ink)}
+.nav ul{display:flex;gap:30px;list-style:none;font-size:.95rem}
+.nav ul a{color:#fff;opacity:.9}
+header.solid .nav ul a{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#fff;padding:13px 26px;font-weight:500;font-size:.98rem;letter-spacing:.02em;transition:.25s;border:1px solid var(--gold)}
+.btn:hover{background:#8f6f3f}
+.btn.ghost{background:transparent;border-color:rgba(255,255,255,.7)}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.hero{position:relative;min-height:clamp(560px,100vh,920px);min-height:clamp(560px,100svh,920px);display:flex;align-items:flex-end;color:#fff;background:#222 url(img/dining.jpg) center/cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(18,17,15,.85) 0%,rgba(18,17,15,.35) 55%,rgba(18,17,15,.25) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:90px;width:100%}
+.eyebrow{font-family:'Playfair Display',serif;font-style:italic;letter-spacing:.22em;font-size:.85rem;color:#e3cfa9;margin-bottom:18px}
+.hero h1{font-family:'Frank Ruhl Libre',serif;font-weight:500;font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.12;max-width:15ch}
+.hero p{font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:40ch;margin:22px 0 34px;opacity:.92}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+section{padding:110px 0}
+.kicker{color:var(--gold);font-weight:500;font-size:.9rem;letter-spacing:.14em;margin-bottom:14px}
+h2{font-family:'Frank Ruhl Libre',serif;font-weight:500;font-size:clamp(1.9rem,3.6vw,2.9rem);line-height:1.2;margin-bottom:22px}
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.about p{font-size:1.1rem;color:#3b3731;margin-bottom:18px}
+.about .ph{position:relative}
+.about .ph img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.about .ph:before{content:"";position:absolute;inset:22px -22px -22px 22px;border:1px solid var(--gold);z-index:-1}
+.facts{display:flex;gap:44px;margin-top:34px;padding-top:30px;border-top:1px solid var(--line)}
+.facts b{display:block;font-family:'Frank Ruhl Libre',serif;font-size:2.6rem;font-weight:500;color:var(--gold);line-height:1}
+.facts span{font-size:.95rem;color:var(--soft)}
+.services{background:var(--stone)}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:44px}
+.svc div{background:var(--paper);padding:40px 34px}
+.svc .n{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold);font-size:1.1rem}
+.svc h3{font-family:'Frank Ruhl Libre',serif;font-weight:500;font-size:1.5rem;margin:10px 0 10px}
+.svc p{color:var(--soft)}
+.intro{max-width:60ch;font-size:1.1rem;color:#3b3731}
+.gallery .grid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:220px;gap:12px;margin-top:44px}
+.gallery figure{overflow:hidden;position:relative;background:#ddd}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.gallery figure:hover img{transform:scale(1.04)}
+.g1{grid-column:span 4;grid-row:span 2}.g2{grid-column:span 2;grid-row:span 2}
+.g3{grid-column:span 2;grid-row:span 2}.g4{grid-column:span 2;grid-row:span 2}.g5{grid-column:span 2;grid-row:span 2}
+.g6{grid-column:span 6;grid-row:span 2}
+.quote{background:var(--dark);color:#efe8dc;text-align:center;padding:100px 0}
+.quote p{font-family:'Frank Ruhl Libre',serif;font-size:clamp(1.5rem,3vw,2.3rem);line-height:1.45;max-width:26ch;margin:0 auto}
+.quote span{display:block;margin-top:22px;color:var(--gold);font-size:.95rem;letter-spacing:.12em}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.cards{display:grid;gap:14px}
+.card{display:flex;align-items:center;gap:18px;padding:22px 24px;background:#fff;border:1px solid var(--line);transition:.25s}
+a.card:hover{border-color:var(--gold)}
+.card .ic{width:46px;height:46px;border-radius:50%;background:var(--stone);display:grid;place-items:center;flex:none;color:var(--gold)}
+.card small{display:block;color:var(--soft);font-size:.85rem}
+.card strong{font-weight:500;font-size:1.12rem}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--soft);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.wa-float{position:fixed;left:20px;bottom:20px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+@media (max-width:900px){
+ .nav ul{display:none}
+ section{padding:80px 0}
+ .about,.contact{grid-template-columns:1fr;gap:48px}
+ .about .ph{order:-1;margin:0 0 0 22px}
+ .svc{grid-template-columns:1fr}
+ .gallery .grid{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
+ .g1,.g6{grid-column:span 2;grid-row:span 2}
+ .g2,.g3,.g4,.g5{grid-column:span 1;grid-row:span 2}
+ .facts{gap:30px}
+}
+@media (max-width:480px){
+ .wrap{padding:0 20px}
+ .hero .wrap{padding-bottom:60px}
+ .cta .btn{flex:1;justify-content:center}
+}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap nav">
+ <a class="brand" href="#">ג'יימי שטיין<small>Paint &amp; Finish Craftsman</small></a>
+ <ul><li><a href="#about">עליי</a></li><li><a href="#services">מה אני עושה</a></li><li><a href="#gallery">גלריה</a></li><li><a href="#contact">צור קשר</a></li></ul>
+ <a class="btn" href="https://wa.me/972526967168" target="_blank" rel="noopener">וואטסאפ</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+ <div class="eyebrow">PAINT &amp; FINISH CRAFTSMAN</div>
+ <h1>גימור מושלם הוא לא מזל. הוא דור שלישי של מקצוע.</h1>
+ <p>צבע, שפכטל וגימורים ברמה הגבוהה ביותר - 20 שנה של עבודה מדויקת, מבתי יוקרה ועד מבנים מסחריים.</p>
+ <div class="cta">
+  <a class="btn" href="https://wa.me/972526967168" target="_blank" rel="noopener">לתיאום בוואטסאפ</a>
+  <a class="btn ghost" href="#gallery">לגלריה</a>
+ </div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+ <div>
+  <div class="kicker">עליי</div>
+  <h2>דיוק, יצירתיות ותשומת לב לכל פרט</h2>
+  <p>אני ג'יימי שטיין, בעל מקצוע דור שלישי עם עשרים שנות ניסיון בעבודה מפורטת ובשירות ברמה הגבוהה ביותר.</p>
+  <p>המוניטין שלי נבנה על דיוק, יצירתיות ותשומת לב לכל פרט. המטרה פשוטה: להפוך חללים ליצירות שמרשימות כל מי שנכנס אליהן - בבתים פרטיים יוקרתיים ובמבנים מסחריים מוכרים.</p>
+  <div class="facts">
+   <div><b>3</b><span>דורות במקצוע</span></div>
+   <div><b>20</b><span>שנות ניסיון</span></div>
+  </div>
+ </div>
+ <div class="ph"><img src="img/stair.jpg" alt="גרם מדרגות ספירלי בגימור לבן" loading="lazy"></div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap">
+ <div class="kicker">מה אני עושה</div>
+ <h2>גימור, צבע ושפכטל ברמה גבוהה</h2>
+ <p class="intro">אני עובד רק עם הצבעים והפריימרים באיכות הגבוהה ביותר, כדי להבטיח גימור מושלם שמחזיק לאורך שנים.</p>
+ <div class="svc">
+  <div><span class="n">01</span><h3>צבע</h3><p>צביעת קירות ותקרות בגימור נקי ואחיד, עם חומרים מהשורה הראשונה.</p></div>
+  <div><span class="n">02</span><h3>שפכטל</h3><p>הכנת משטחים והחלקה לקירות ישרים וחלקים - הבסיס לכל גימור טוב.</p></div>
+  <div><span class="n">03</span><h3>גימורים מיוחדים</h3><p>גימורים ברמה גבוהה לבתי יוקרה ולחללים מסחריים, בהתאמה לכל פרויקט.</p></div>
+ </div>
+</div></section>
+
+<section class="gallery" id="gallery"><div class="wrap">
+ <div class="kicker">גלריה</div>
+ <h2>חללים מהגלריה</h2>
+ <div class="grid">
+  <figure class="g1"><img src="img/kitchen.jpg" alt="מטבח עם אי" loading="lazy"></figure>
+  <figure class="g2"><img src="img/bedroom.jpg" alt="חדר שינה" loading="lazy"></figure>
+  <figure class="g3"><img src="img/bath.jpg" alt="קיר מחורץ וכיור עמוד" loading="lazy"></figure>
+  <figure class="g4"><img src="img/stair.jpg" alt="גרם מדרגות" loading="lazy"></figure>
+  <figure class="g5"><img src="img/dining.jpg" alt="פינת אוכל" loading="lazy"></figure>
+  <figure class="g6"><img src="img/living.jpg" alt="סלון עם חלונות גדולים" loading="lazy"></figure>
+ </div>
+</div></section>
+
+<section class="quote"><div class="wrap">
+ <p>"החוויה הטובה ביותר ללקוח - מוצר באיכות הגבוהה ביותר ושירות יוצא דופן."</p>
+ <span>המחויבות שלי</span>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+ <div>
+  <div class="kicker">צור קשר</div>
+  <h2>מתכננים שיפוץ או צביעה?</h2>
+  <p class="intro">שלחו הודעה בוואטסאפ עם כמה מילים ותמונה של החלל, ונחזור אליכם לתיאום.</p>
+ </div>
+ <div class="cards">
+  <a class="card" href="https://wa.me/972526967168" target="_blank" rel="noopener"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></span><span><small>וואטסאפ / טלפון</small><strong class="ltr">052-696-7168</strong></span></a>
+  <a class="card" href="mailto:jamieastein1@gmail.com"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg></span><span><small>אימייל</small><strong class="ltr">jamieastein1@gmail.com</strong></span></a>
+  <div class="card"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><small>שעות פעילות</small><strong><span class="ltr">09:00–17:00</span></strong></span></div>
+  <div class="card"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><small>אזור</small><strong>בית זית והסביבה</strong></span></div>
+ </div>
+</div></section>
+
+<footer><div class="wrap"><span>© ג'יימי שטיין - צבע וגימור</span><span class="ltr">Jamie Stein · Paint &amp; Finish Craftsman</span></div></footer>
+
+<a class="wa-float" href="https://wa.me/972526967168" target="_blank" rel="noopener" aria-label="וואטסאפ"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></a>
+<script>
+const h=document.getElementById('hd');const f=()=>h.classList.toggle('solid',scrollY>60);addEventListener('scroll',f);f();
+</script>
+</body>
+</html>
